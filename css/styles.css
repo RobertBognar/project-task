@@ -46,17 +46,18 @@
     background-repeat: no-repeat;
     height: 978px;
     width: 978px;
-    top: 52%;
-    left: 48%;
+    top: 51%;
+    left: 48.5%;
 }
 
 .card{
     position: relative;
     background: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 0px 25px;
     font-size: 18px;
     height: 380px;
     width: 350px;
-    border-radius: 20px;
     z-index: 2;
 }
 
@@ -149,6 +150,8 @@
     font-weight: 400;
     color: var(--dark-grayish-blue);
 }
+
+
 
 /*Media Responsivnes - media queries */
 
