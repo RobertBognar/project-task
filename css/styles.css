@@ -29,8 +29,8 @@
     background-repeat: no-repeat;
     height: 978px;
     width: 978px;
-    bottom: 38.5%;
-    right: 51.5%;
+    bottom: 37.5%;
+    right: 51.8%;
 }
 .bottom-background-image {
     position: absolute;
@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
     height: 978px;
     width: 978px;
-    top: 51%;
+    top: 52%;
     left: 48.5%;
 }
 .card {
@@ -92,7 +92,7 @@
 .profile .name {
     color: black;
     font-weight: 700;
-    margin: 15px 0 0 20px;
+    margin: 25px 0 0 20px;
     padding: 0 20px 0 0;
 }
 .profile .age {
@@ -105,7 +105,7 @@
     font-size: 14px;
     color: var(--dark-grayish-blue);
     margin: 10px 0 0 0;
-    padding: 0 0 0 5px;
+    padding: 0 0 0 2px;
 }
 /*Statistics informations*/
 .statistic {
@@ -113,7 +113,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    padding-top: 25px;
+    padding-top: 20px;
     text-align: center;
 }
 .statistic .number {
@@ -165,7 +165,7 @@
         padding: px 20px 0 0;
     }
     .statistic {
-        padding-top: 25px;
+        padding-top: 20px;
     }
     .statistic .statistic-description {
         font-size: 10px;
