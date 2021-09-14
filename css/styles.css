@@ -72,7 +72,7 @@
     left: 50%;
     transform: translate(-50%);
     border-radius: 50%;
-    border: 4px solid white;
+    border: 6px solid white;
 }
 
 .profile .picture{
@@ -169,7 +169,7 @@
     .bottom-background-image{
         height: 375px;
         width: 375px;
-        top: 42%;
+        top: 40%;
         left: 44%;
         opacity: 70%;
     }
@@ -185,22 +185,26 @@
     }
 
     .card .background-image {
-        height: 120px;
+        height: 140px;
         width: 100%;
         border-radius: 20px 20px 0 0;
         z-index: 1;
     }
 
     .profile .picture{
-        top: 115px;
+        top: 130px;
     }
 
     .profile .name{
-        padding: 10px 20px 0 0;
+        padding: px 20px 0 0;
     }
 
     .statistic {
-        padding-top: 30px;
+        padding-top: 25px;
+    }
+
+    .statistic .statistic-description{
+        font-size: 10px;
     }
     
 }
