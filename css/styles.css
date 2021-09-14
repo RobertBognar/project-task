@@ -5,20 +5,15 @@
     font-family: "Kumbh Sans", sans-serif;
     font-size: 18px;
 }
-
-
 /* using root and css variables to define all colors from style text and use them later */
-
-:root{
+:root {
     --dark-cyan: hsl(185, 75%, 39%);
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
     --dark-gray: hsl(0, 0%, 59%);
 }
-
 /* positioning parent relative, so we can position nested children relative to its parent */
-
-.container{
+.container {
     height: 100vh;
     background: var(--dark-cyan);
     color: var(--very-dark-desaturated-blue);
@@ -28,8 +23,7 @@
     position: relative;
     overflow: hidden;
 }
-
-.top-background-image{
+.top-background-image {
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,9 +32,7 @@
     bottom: 38.5%;
     right: 51.5%;
 }
-
-
-.bottom-background-image{
+.bottom-background-image {
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,24 +41,21 @@
     top: 51%;
     left: 48.5%;
 }
-
-.card{
+.card {
     position: relative;
     background: white;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.50) 0px 0px 25px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 6px;
     font-size: 18px;
     height: 380px;
     width: 350px;
     z-index: 2;
 }
-
-.card .background-image{
+.card .background-image {
     height: 140px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     z-index: 1;
 }
-
 .card .pic {
     position: absolute;
     left: 50%;
@@ -74,8 +63,7 @@
     border-radius: 50%;
     border: 6px solid white;
 }
-
-.profile .picture{
+.profile .picture {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -87,48 +75,40 @@
     align-items: center;
     justify-content: center;
 }
-
-
 /*Profile Informations*/
-
-.card-information{
+.card-information {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 50px;
 }
-
-.profile{
+.profile {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid var(--dark-gray);
     padding-bottom: 25px;
 }
-
-.profile .name{
+.profile .name {
     color: black;
     font-weight: 700;
     margin: 15px 0 0 20px;
     padding: 0 20px 0 0;
 }
-
-.profile .age{
-    font-weight: 700;
+.profile .age {
+    font-weight: 400;
     color: var(--dark-grayish-blue);
+    margin: 0px 0px 0px 5px;
 }
-
-.profile .location{
+.profile .location {
     font-weight: 400;
     font-size: 14px;
     color: var(--dark-grayish-blue);
     margin: 10px 0 0 0;
     padding: 0 0 0 5px;
 }
-
 /*Statistics informations*/
-
-.statistic{
+.statistic {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -136,75 +116,58 @@
     padding-top: 20px;
     text-align: center;
 }
-
-.statistic .number{
+.statistic .number {
     padding: 5px 10px 0 0;
     font-weight: 700;
-    color: black;
+    color: var(--very-dark-desaturated-blue);
 }
-
-.statistic .statistic-description{
+.statistic .statistic-description {
     padding: 0 10px 0 2px;
     font-size: 10px;
     letter-spacing: 2px;
     font-weight: 400;
     color: var(--dark-grayish-blue);
 }
-
-
-
 /*Media Responsivnes - media queries */
-
-@media screen and (max-width: 375px) and (max-width: 1440px){
+@media screen and (max-width: 375px) and (max-width: 1440px) {
     /* responsivnes for background image*/
-
-    .top-background-image{
+    .top-background-image {
         height: 375px;
         width: 375px;
         bottom: 115%;
         right: 205%;
         opacity: 50%;
     }
-    
-    .bottom-background-image{
+    .bottom-background-image {
         height: 375px;
         width: 375px;
         top: 40%;
         left: 44%;
         opacity: 70%;
     }
-
     /*Responsivnes for card informations */
-    
-    .card {
+     .card {
         font-size: 12px;
         height: 380px;
         width: 320px;
-        border-radius: 20px;
         z-index: 2;
     }
-
     .card .background-image {
         height: 140px;
         width: 100%;
-        border-radius: 20px 20px 0 0;
+        border-radius: 15px 15px 0 0;
         z-index: 1;
     }
-
-    .profile .picture{
+    .profile .picture {
         top: 130px;
     }
-
-    .profile .name{
+    .profile .name {
         padding: px 20px 0 0;
     }
-
     .statistic {
         padding-top: 25px;
     }
-
-    .statistic .statistic-description{
+    .statistic .statistic-description {
         font-size: 10px;
     }
-    
 }
