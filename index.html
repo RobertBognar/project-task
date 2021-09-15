@@ -4,55 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Project Task</title>
 </head>
-<body>
-    <!--Global wrap with section-->
-    <section class="container">
-        <div class="top-background-image">
-            <img src="./images/bg-pattern-top.svg" alt="background image top">
-        </div>
-        <div class="bottom-background-image">
-            <img src="./images/bg-pattern-bottom.svg" alt="background image bottom"> 
-        </div>
-        <div class="card">
-            <div class="background-image">
-                <img class="background-image" src="./images/bg-pattern-card.svg" alt="">
-            </div>
-            <!--Wrapping div for profile basic information: name, age & location-->
-            <div class="card-information">
-                <div class="profile">
-                    <div class="picture">
-                        <img class="pic" src="./images/image-victor.jpg" alt="profile image of Victor">
+    <body>
+        <!--Global wrap with section-->
+        <section class="container">
+                <section class="images">
+                    <div class="top-background-image">
+                        <img src="assets/images/bg-pattern-top.svg" alt="background image top">
                     </div>
-                    <p class="name">
-                        <span>Victor Crest</span>
-                        <span class="age"> 26</span>
-                    </p>
-                    <p class="location">London</p>
+                    <div class="bottom-background-image">
+                        <img src="assets/images/bg-pattern-bottom.svg" alt="background image bottom"> 
+                    </div>
+            </section>
+            <div class="card">
+                <div class="background-image">
+                    <img class="background-image" src="assets/images/bg-pattern-card.svg" alt="">
                 </div>
-                <!--Wrapping div for statistic informations such as: Followers, Likes, Photos-->
-                <div class="statistic">
-                    <div class="followers">
-                        <p class="number">80K</p>
-                        <p class="statistic-description">Followers</p>
+                <!--Wrapping div for profile basic information: name, age & location-->
+                <section class="main-card">
+                    <div class="card-information">
+                        <div class="profile">
+                            <div class="picture">
+                                <img class="pic" src="assets/images/image-victor.jpg" alt="profile image of Victor">
+                            </div>
+                            <p class="name">
+                                <span>Victor Crest</span>
+                                <span class="age"> 26</span>
+                            </p>
+                            <p class="location">London</p>
+                        </div>
+                        <!--Wrapping div for statistic informations such as: Followers, Likes, Photos-->
+                        <div class="statistic">
+                            <div class="followers">
+                                <p class="number">80K</p>
+                                <p class="statistic-description">Followers</p>
+                            </div>
+                            <div class="likes">
+                                <p class="number">803K</p>
+                                <p class="statistic-description">Likes</p>
+                            </div>
+                            <div class="photos">
+                                <p class="number">1.4K</p>
+                                <p class="statistic-description">Photos</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="likes">
-                        <p class="number">803K</p>
-                        <p class="statistic-description">Likes</p>
-                    </div>
-                    <div class="photos">
-                        <p class="number">1.4K</p>
-                        <p class="statistic-description">Photos</p>
-                    </div>
-                </div>
+                </section>
             </div>
-        </div>
-    </section>
-</body>
+        </section>
+    </body>
 </html>

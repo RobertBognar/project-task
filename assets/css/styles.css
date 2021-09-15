@@ -29,8 +29,8 @@
     background-repeat: no-repeat;
     height: 978px;
     width: 978px;
-    bottom: 37.5%;
-    right: 51.8%;
+    bottom: 38.5%;
+    right: 51.5%;
 }
 .bottom-background-image {
     position: absolute;
@@ -141,8 +141,8 @@
     .bottom-background-image {
         height: 375px;
         width: 375px;
-        top: 40%;
-        left: 44%;
+        top: 44.5%;
+        left: 40%;
         opacity: 70%;
     }
     /*Responsivnes for card informations */
@@ -159,7 +159,7 @@
         z-index: 1;
     }
     .profile .picture {
-        top: 130px;
+        top: 135px;
     }
     .profile .name {
         padding: px 20px 0 0;
