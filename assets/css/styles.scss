@@ -1,0 +1,173 @@
+@import "variables";
+
+@mixin desktop {
+    @media (max-width: #{$desktop}){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primaryFont;
+    font-size: $primaryFontSize;
+}
+
+body {
+    
+    .container {
+        height: 100vh;
+        background: $darkCyan;
+        color: $veryDarkDesaturatedBlue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: $positionParent;
+        overflow: hidden;
+    }
+    .top-background-image {
+        position: $positionChild;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        width: auto;
+        bottom: 37.2%;
+        right: 51.5%;
+        @include desktop {
+            right: 52%;
+        }
+        @include tablet {
+            right: 53.5%;
+            opacity: 65%;
+        }
+        @include mobile {
+            right: 49%;
+        }
+    }
+    .bottom-background-image {
+        position: $positionChild;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: $imageHeight;
+        width: $imageWidth;
+        top: 52%;
+        left: 48.5%;
+        z-index: $zIndexChild;
+        @include tablet {
+            top: 51%;
+        }
+        @include mobile {
+            top: 50%;
+            left: 45%;
+            opacity: 60%;
+        }
+    }
+    .card {
+        position: $positionParent;
+        background: $primaryCardColor;
+        border-radius: 15px;
+        box-shadow: $primaryShadow;
+        font-size: $primaryFontSize;
+        height: 380px;
+        width: 350px;
+        z-index: $zIndexChild;
+        @include mobile {
+            width: 88%;
+        }
+    }
+    .card .background-image {
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+        z-index: $zIndexParent;
+        @include mobile {
+            width: 100%;
+        } 
+    }
+    .card .pic {
+        position: $positionChild;
+        left: 50%;
+        transform: translate(-50%);
+        box-shadow: $primaryShadow;
+        border-radius: 50%;
+        border: 6px solid white;
+        @include mobile {
+            width: auto;
+        }   
+    }
+    .profile .picture {
+        position: $positionChild;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 135px;
+        background: $primaryCardColor;
+        padding: 5px;
+        border-radius: $primaryBorderRadius;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-information {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .profile {
+        width: 100%;
+        text-align: center;
+        border-bottom: 0.1rem solid lightgray;
+        padding-bottom: 25px;
+    }
+    .profile .name {
+        color: $veryDarkDesaturatedBlue;
+        font-weight: $primaryFontWeight;
+        margin: 25px 0 0 20px;
+        padding: 0 20px 0 0;
+    }
+    .profile .age {
+        font-weight: $secondaryFontWeight;
+        color: $darkGrayishBlue;
+        margin: 0px 0px 0px 5px;
+    }
+    .profile .location {
+        font-weight: $secondaryFontWeight;
+        font-size: $secondaryFontSize;
+        color: $darkGrayishBlue;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 2px;
+    }
+    .statistic {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .statistic .number {
+        padding: 5px 10px 0 0;
+        font-weight: $primaryFontWeight;
+        color: $veryDarkDesaturatedBlue;
+    }
+    .statistic .statistic-description {
+        padding: 4px 10px 0px 2px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        font-weight: $secondaryFontWeight;
+        color: $darkGrayishBlue;
+    }
+}
