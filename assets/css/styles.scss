@@ -131,25 +131,26 @@ body {
         text-align: center;
         border-bottom: 0.1rem solid lightgray;
         padding-bottom: 25px;
+        .name {
+            color: $veryDarkDesaturatedBlue;
+            font-weight: $primaryFontWeight;
+            margin: 25px 0 0 20px;
+            padding: 0 20px 0 0;
+        }
+        .age {
+            font-weight: $secondaryFontWeight;
+            color: $darkGrayishBlue;
+            margin: 0px 0px 0px 5px;
+        }
+        .location {
+            font-weight: $secondaryFontWeight;
+            font-size: $secondaryFontSize;
+            color: $darkGrayishBlue;
+            margin: 10px 0 0 0;
+            padding: 0 0 0 2px;
+        }
     }
-    .profile .name {
-        color: $veryDarkDesaturatedBlue;
-        font-weight: $primaryFontWeight;
-        margin: 25px 0 0 20px;
-        padding: 0 20px 0 0;
-    }
-    .profile .age {
-        font-weight: $secondaryFontWeight;
-        color: $darkGrayishBlue;
-        margin: 0px 0px 0px 5px;
-    }
-    .profile .location {
-        font-weight: $secondaryFontWeight;
-        font-size: $secondaryFontSize;
-        color: $darkGrayishBlue;
-        margin: 10px 0 0 0;
-        padding: 0 0 0 2px;
-    }
+    
     .statistic {
         display: flex;
         align-items: center;
@@ -157,17 +158,17 @@ body {
         width: 100%;
         padding-top: 20px;
         text-align: center;
-    }
-    .statistic .number {
-        padding: 5px 10px 0 0;
-        font-weight: $primaryFontWeight;
-        color: $veryDarkDesaturatedBlue;
-    }
-    .statistic .statistic-description {
-        padding: 4px 10px 0px 2px;
-        font-size: 10px;
-        letter-spacing: 2px;
-        font-weight: $secondaryFontWeight;
-        color: $darkGrayishBlue;
+        .number {
+            padding: 5px 10px 0 0;
+            font-weight: $primaryFontWeight;
+            color: $veryDarkDesaturatedBlue;
+        }
+        .statistic-description {
+            padding: 4px 10px 0px 2px;
+            font-size: 10px;
+            letter-spacing: 2px;
+            font-weight: $secondaryFontWeight;
+            color: $darkGrayishBlue;
+        }
     }
 }
