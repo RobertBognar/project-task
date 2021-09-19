@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+body .container {
+  height: 100vh;
+  background: #19a2ae;
+  color: #2d3248;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body .top-background-image {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: auto;
+  bottom: 37.2%;
+  right: 51.5%;
+}
+
+@media (max-width: 1440px) {
+  body .top-background-image {
+    right: 52%;
+  }
+}
+
+@media (max-width: 900px) {
+  body .top-background-image {
+    right: 53.5%;
+    opacity: 65%;
+  }
+}
+
+@media (max-width: 375px) {
+  body .top-background-image {
+    right: 49%;
+  }
+}
+
+body .bottom-background-image {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 978px;
+  width: 978px;
+  top: 52%;
+  left: 48.5%;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  body .bottom-background-image {
+    top: 51%;
+  }
+}
+
+@media (max-width: 375px) {
+  body .bottom-background-image {
+    top: 50%;
+    left: 45%;
+    opacity: 60%;
+  }
+}
+
+body .card {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 6px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 6px;
+  font-size: 18px;
+  height: 380px;
+  width: 350px;
+  z-index: 2;
+}
+
+@media (max-width: 375px) {
+  body .card {
+    width: 88%;
+  }
+}
+
+body .card .background-image {
+  height: 140px;
+  border-radius: 15px 15px 0 0;
+  z-index: 1;
+}
+
+@media (max-width: 375px) {
+  body .card .background-image {
+    width: 100%;
+  }
+}
+
+body .card .pic {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 6px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 6px;
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+@media (max-width: 375px) {
+  body .card .pic {
+    width: auto;
+  }
+}
+
+body .profile .picture {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 135px;
+  background: white;
+  padding: 5px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .card-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+body .profile {
+  width: 100%;
+  text-align: center;
+  border-bottom: 0.1rem solid lightgray;
+  padding-bottom: 25px;
+}
+
+body .profile .name {
+  color: #2d3248;
+  font-weight: 700;
+  margin: 25px 0 0 20px;
+  padding: 0 20px 0 0;
+}
+
+body .profile .age {
+  font-weight: 400;
+  color: #6a6f81;
+  margin: 0px 0px 0px 5px;
+}
+
+body .profile .location {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6a6f81;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 2px;
+}
+
+body .statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+body .statistic .number {
+  padding: 5px 10px 0 0;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+body .statistic .statistic-description {
+  padding: 4px 10px 0px 2px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #6a6f81;
+}
+/*# sourceMappingURL=styles.css.map */
